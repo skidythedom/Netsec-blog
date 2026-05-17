@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>BGP Security and Route Hijacking Prevention</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      NetSec Journal
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Research</a>
+      <a href="#">Networking</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="container single-post-layout">
+
+  <!-- TOC -->
+  <aside class="toc">
+
+    <h4>Contents</h4>
+
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#bgp">What is BGP?</a></li>
+      <li><a href="#attacks">Route Hijacking</a></li>
+      <li><a href="#protection">Protection</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+
+  </aside>
+
+  <!-- ARTICLE -->
+  <article class="post-content">
+
+    <span class="tag blue">
+      Networking
+    </span>
+
+    <h1>
+      BGP Security and Route Hijacking Prevention
+    </h1>
+
+    <div class="post-meta">
+
+      <div class="author-inline">
+        <img src="https://i.pravatar.cc/100?img=11" alt="">
+        <span>Marcus Lee</span>
+      </div>
+
+      <span>5 min read</span>
+
+    </div>
+
+    <img
+      class="featured-post-image"
+      src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1400&auto=format&fit=crop"
+      alt=""
+    />
+
+    <section id="intro">
+
+      <h2>Introduction</h2>
+
+      <p>
+        The Border Gateway Protocol powers global internet routing.
+        Despite its importance, BGP was designed without strong
+        built-in authentication mechanisms.
+      </p>
+
+      <p>
+        This creates opportunities for route hijacking attacks
+        capable of redirecting internet traffic through malicious
+        networks.
+      </p>
+
+    </section>
+
+    <section id="bgp">
+
+      <h2>What is BGP?</h2>
+
+      <p>
+        BGP enables autonomous systems to exchange routing
+        information and determine the best available paths
+        across the internet.
+      </p>
+
+    </section>
+
+    <section id="attacks">
+
+      <h2>Route Hijacking</h2>
+
+      <p>
+        Route hijacking occurs when unauthorized systems
+        advertise IP prefixes they do not control.
+      </p>
+
+      <p>
+        Such attacks can result in surveillance,
+        denial of service, or traffic manipulation.
+      </p>
+
+    </section>
+
+    <section id="protection">
+
+      <h2>Protection Methods</h2>
+
+      <p>
+        Modern protections include RPKI validation,
+        route filtering, prefix limits,
+        and real-time anomaly monitoring.
+      </p>
+
+    </section>
+
+    <section id="conclusion">
+
+      <h2>Conclusion</h2>
+
+      <p>
+        As internet infrastructure evolves,
+        securing routing protocols remains
+        essential for maintaining trust and stability.
+      </p>
+
+    </section>
+
+  </article>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

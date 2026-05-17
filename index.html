@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>NetSec Journal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      NetSec Journal
+    </a>
+
+    <nav>
+      <a href="#">Research</a>
+      <a href="#">Cybersecurity</a>
+      <a href="#">Networking</a>
+      <a href="#">Threat Intel</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+
+  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop"
+      alt=""
+    />
+  </div>
+
+  <div class="hero-content">
+
+    <span class="hero-tag">
+      Featured Research
+    </span>
+
+    <h1>
+      Zero Trust Security Models in Enterprise Networks
+    </h1>
+
+    <p>
+      Editorial analysis and practical implementation strategies
+      for modern hybrid infrastructures.
+    </p>
+
+    <a href="post1.html" class="hero-button">
+      Read Article
+    </a>
+
+  </div>
+
+</section>
+
+<!-- TOPICS -->
+<section class="categories container">
+
+  <div class="pill active">All</div>
+  <div class="pill">Cybersecurity</div>
+  <div class="pill">Networking</div>
+  <div class="pill">Cloud Security</div>
+  <div class="pill">Threat Hunting</div>
+  <div class="pill">Digital Forensics</div>
+  <div class="pill">Ethical Hacking</div>
+  <div class="pill">Linux Security</div>
+  <div class="pill">Wireshark</div>
+
+</section>
+
+<!-- ARTICLES -->
+<main class="container">
+
+  <section class="articles-grid">
+
+    <!-- CARD -->
+    <article class="card">
+
+      <img
+        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="card-content">
+
+        <span class="tag blue">
+          Networking
+        </span>
+
+        <h3>
+          <a href="post1.html">
+            BGP Security and Route Hijacking Prevention
+          </a>
+        </h3>
+
+        <p>
+          Understanding modern attacks against internet routing
+          infrastructure and how organizations defend against them.
+        </p>
+
+        <div class="card-footer">
+
+          <span>5 min read</span>
+
+          <div class="author-inline">
+            <img src="https://i.pravatar.cc/100?img=11" alt="">
+            <span>Marcus Lee</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- CARD -->
+    <article class="card">
+
+      <img
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+      <div class="card-content">
+
+        <span class="tag green">
+          Cloud Security
+        </span>
+
+        <h3>
+          <a href="post2.html">
+            Securing Kubernetes in Production Environments
+          </a>
+        </h3>
+
+        <p>
+          Practical techniques for protecting containerized workloads
+          and reducing attack surfaces.
+        </p>
+
+        <div class="card-footer">
+
+          <span>7 min read</span>
+
+          <div class="author-inline">
+            <img src="https://i.pravatar.cc/100?img=28" alt="">
+            <span>Daniel Brooks</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe-section">
+
+    <h2>
+      Subscribe to NetSec Journal
+    </h2>
+
+    <p>
+      Weekly insights covering cybersecurity, networking,
+      cloud security, and threat intelligence.
+    </p>
+
+    <form class="subscribe-form">
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+      />
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

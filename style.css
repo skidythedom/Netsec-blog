@@ -1,0 +1,332 @@
+:root{
+  --bg:#f9f9f9;
+  --text:#1e293b;
+  --muted:#64748b;
+  --border:#e2e8f0;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  line-height:1.7;
+}
+
+h1,h2,h3,h4{
+  font-family:'Merriweather',serif;
+}
+
+.container{
+  width:min(1200px,92%);
+  margin:auto;
+}
+
+#progress-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:4px;
+  width:0%;
+  background:#0f172a;
+  z-index:9999;
+}
+
+.site-header{
+  position:sticky;
+  top:0;
+  background:rgba(249,249,249,.95);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  z-index:1000;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 0;
+}
+
+.logo{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:700;
+  font-size:1.3rem;
+}
+
+nav{
+  display:flex;
+  gap:1.5rem;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--muted);
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:3rem;
+  align-items:center;
+  padding:4rem 0;
+}
+
+.hero img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.hero-content h1{
+  font-size:3rem;
+  margin:1rem 0;
+}
+
+.hero-content p{
+  color:var(--muted);
+  margin-bottom:2rem;
+}
+
+.hero-button{
+  display:inline-block;
+  padding:1rem 1.4rem;
+  background:#0f172a;
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+}
+
+.hero-tag{
+  display:inline-block;
+  padding:.4rem .8rem;
+  border-radius:999px;
+  background:#e2e8f0;
+  font-size:.85rem;
+}
+
+.categories{
+  display:flex;
+  gap:1rem;
+  overflow:auto;
+  padding-bottom:1rem;
+  margin-bottom:3rem;
+}
+
+.pill{
+  white-space:nowrap;
+  border:1px solid var(--border);
+  padding:.7rem 1rem;
+  border-radius:999px;
+  background:white;
+}
+
+.active{
+  background:#0f172a;
+  color:white;
+}
+
+.articles-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:2rem;
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+
+.card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:1.5rem;
+}
+
+.card h3{
+  margin:1rem 0;
+}
+
+.card h3 a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.card p{
+  color:var(--muted);
+}
+
+.card-footer{
+  margin-top:1.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.author-inline{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+
+.author-inline img{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+}
+
+.subscribe-section{
+  margin:5rem 0;
+  padding:3rem;
+  border:1px solid var(--border);
+  border-radius:20px;
+  text-align:center;
+  background:white;
+}
+
+.subscribe-form{
+  margin-top:2rem;
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+}
+
+.subscribe-form input{
+  width:320px;
+  padding:1rem;
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+
+.subscribe-form button{
+  padding:1rem 1.4rem;
+  border:none;
+  background:#0f172a;
+  color:white;
+  border-radius:10px;
+}
+
+.single-post-layout{
+  display:grid;
+  grid-template-columns:250px 1fr;
+  gap:4rem;
+  padding:4rem 0;
+}
+
+.toc{
+  position:sticky;
+  top:100px;
+  align-self:start;
+}
+
+.toc ul{
+  list-style:none;
+  margin-top:1rem;
+}
+
+.toc li{
+  margin-bottom:.8rem;
+}
+
+.toc a{
+  text-decoration:none;
+  color:var(--muted);
+}
+
+.post-content{
+  max-width:800px;
+}
+
+.post-content h1{
+  font-size:3rem;
+  margin:1rem 0;
+}
+
+.post-meta{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:2rem;
+}
+
+.post-content section{
+  margin:3rem 0;
+}
+
+.featured-post-image{
+  width:100%;
+  border-radius:20px;
+  margin-bottom:2rem;
+}
+
+.tag{
+  display:inline-block;
+  padding:.35rem .7rem;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:600;
+}
+
+.blue{
+  background:#dbeafe;
+  color:#1d4ed8;
+}
+
+.green{
+  background:#dcfce7;
+  color:#15803d;
+}
+
+@media(max-width:900px){
+
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .articles-grid{
+    grid-template-columns:1fr;
+  }
+
+  .single-post-layout{
+    grid-template-columns:1fr;
+  }
+
+  .toc{
+    position:relative;
+    top:0;
+  }
+
+}
+
+@media(max-width:768px){
+
+  nav{
+    display:none;
+  }
+
+  .hero-content h1,
+  .post-content h1{
+    font-size:2.2rem;
+  }
+
+  .subscribe-form{
+    flex-direction:column;
+  }
+
+  .subscribe-form input{
+    width:100%;
+  }
+
+}
